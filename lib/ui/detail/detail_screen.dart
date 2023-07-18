@@ -22,13 +22,13 @@ class DetailScreen extends StatelessWidget {
           Stack(
             children: [
               Image.network(
-                place.photoUrl,
+                place.detailUrl,
                 height: 240,
                 width: size.width,
                 fit: BoxFit.cover,
               ),
               Positioned(
-                top: 50,
+                top: 40,
                 left: 10,
                 child: ClipOval(
                   child: GestureDetector(
