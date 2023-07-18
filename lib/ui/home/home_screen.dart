@@ -1,5 +1,8 @@
+// ignore_for_file: inference_failure_on_instance_creation
+
 import 'package:flutter/material.dart';
 import 'package:travel_app/models/place_item.dart';
+import 'package:travel_app/ui/detail/detail_screen.dart';
 import 'package:travel_app/ui/home/place_item_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -28,6 +31,13 @@ class HomeScreen extends StatelessWidget {
             return PlaceItemWidget(
               item.photoUrl,
               label: item.name,
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => DetailScreen(place: item),
+                  ),
+                );
+              },
             );
           },
         ),
