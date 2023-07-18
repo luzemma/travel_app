@@ -21,11 +21,14 @@ class DetailScreen extends StatelessWidget {
         children: [
           Stack(
             children: [
-              Image.network(
-                place.detailUrl,
-                height: 240,
-                width: size.width,
-                fit: BoxFit.cover,
+              Hero(
+                tag: key.toString(),
+                child: Image.network(
+                  place.photoUrl,
+                  height: 240,
+                  width: size.width,
+                  fit: BoxFit.cover,
+                ),
               ),
               Positioned(
                 top: 40,

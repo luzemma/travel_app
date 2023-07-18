@@ -21,8 +21,11 @@ class PlaceItemWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         child: Stack(
           children: [
-            Image.network(
-              imageUrl,
+            Hero(
+              tag: key.toString(),
+              child: Image.network(
+                imageUrl,
+              ),
             ),
             if (label != null)
               Positioned(

@@ -3,30 +3,26 @@ class PlaceItem {
     required this.name,
     required this.photoUrl,
     required this.description,
-    required this.detailUrl,
   });
 
   final String name;
   final String photoUrl;
   final String description;
-  final String detailUrl;
 }
 
 final places = [
   PlaceItem(
-      name: 'Banff',
-      photoUrl:
-          'https://pandotrip.com/wp-content/uploads/2018/06/Banff-Avenue-in-Winter.jpg',
-      description:
-          'Embedded in the middle of National Park and surrounded by a '
-          'mountainous landscape. \nThe town is a popular tourist attraction, '
-          'providing plenty of picturesque sites and activities, that include '
-          'climbing, skiing, cycling and more. Meanwhile, Banff Avenue is at '
-          'the heart of the town. It features numerous cafes, restaurants, '
-          'shops, and museums. \nThe main street features historic architecture, '
-          'which is interesting to explore.',
-      detailUrl:
-          'https://pandotrip.com/wp-content/uploads/2018/06/Banff-Avenue-Alberta-Canada.jpg'),
+    name: 'Banff',
+    photoUrl:
+        'https://pandotrip.com/wp-content/uploads/2018/06/Banff-Avenue-in-Winter.jpg',
+    description: 'Embedded in the middle of National Park and surrounded by a '
+        'mountainous landscape. \nThe town is a popular tourist attraction, '
+        'providing plenty of picturesque sites and activities, that include '
+        'climbing, skiing, cycling and more. Meanwhile, Banff Avenue is at '
+        'the heart of the town. It features numerous cafes, restaurants, '
+        'shops, and museums. \nThe main street features historic '
+        'architecture, which is interesting to explore.',
+  ),
   PlaceItem(
     name: 'Château Frontenac',
     photoUrl: 'https://img.travesiasdigital.com/2018/05/frontenac1.jpg',
@@ -37,8 +33,6 @@ final places = [
         'of the railway society. They wanted to encourage luxury tourism, '
         'or more specifically, influence wealthy travellers to frequent '
         'their trains.',
-    detailUrl:
-        'https://www.quebec-cite.com/sites/otq/files/styles/gallery_desktop/public/simpleview/LCF-Drone_1_5EA1491C-7C1D-43A9-B108C0BD886A4FDB_09793a86-76d3-4e2e-a5250bbedf0673e1.jpg?itok=aYLnaKgS',
   ),
   PlaceItem(
     name: 'Petit-Champlain, Quebec City',
@@ -52,8 +46,6 @@ final places = [
         'the historical architecture, narrow cobblestone streets and '
         'mural paintings. \nMoreover, it is the oldest shopping '
         'district in the whole continent!',
-    detailUrl:
-        'https://www.pandotrip.com/wp-content/uploads/2016/02/Petit-Photo-by-Anwar-Vazquez.jpg',
   ),
   PlaceItem(
     name: 'Louise Lake',
@@ -63,8 +55,6 @@ final places = [
         "holidays. It's an unforgettable sight: tall alpine trees line the "
         'slopes of snow-capped Mount Victoria, framing the sparkling '
         'topaz water.',
-    detailUrl:
-        'https://travellersworldwide.com/wp-content/uploads/2023/02/Shutterstock_601048877.jpg',
   ),
   PlaceItem(
     name: 'Haffner Creek',
@@ -77,8 +67,6 @@ final places = [
         'most experienced climbers. \nThe visitors are also tempted by the '
         'stunning ice pillars and Caveman cave, that features huge '
         'stalactites.',
-    detailUrl:
-        'https://www.pandotrip.com/wp-content/uploads/2016/02/Haffner-Photo-by-Paul-Zizka2.jpg',
   ),
   PlaceItem(
     name: 'Niagara Falls',
@@ -91,8 +79,6 @@ final places = [
         'attracts millions of tourists every year. It also serves '
         'as a source of hydroelectric power due to the incredible '
         'volume of water, that drops with immense power.',
-    detailUrl:
-        'https://pandotrip.com/wp-content/uploads/2018/03/Niagara-Falls-Drone-View.jpg',
   ),
   PlaceItem(
     name: 'Hotel de Glace',
@@ -104,8 +90,6 @@ final places = [
         'the hotel meets and greets its guests with a drink served in '
         'an ice glass of course. \nThe rooms come with warm sleeping '
         'bags, ensuring a cozy rest.',
-    detailUrl:
-        'https://www.pandotrip.com/wp-content/uploads/2016/02/Hotel-Photo-by-Hotel-de-Glace3.jpg',
   ),
   PlaceItem(
     name: 'Waterton Lake Cruise',
@@ -119,8 +103,6 @@ final places = [
         'admire its stunning unspoiled nature. \nThere is Waterton '
         "town on the lake's shores, therefore visitors can find "
         'all the facilities, which make their trip comfortable.',
-    detailUrl:
-        'https://pandotrip.com/wp-content/uploads/2018/06/The-view-of-Upper-Waterton-Lake-Canada.jpg',
   ),
   PlaceItem(
     name: 'Mount Asgard',
@@ -133,8 +115,6 @@ final places = [
         'Sivanitirutinguak by the Inuit. \nThe whole park is a '
         'wonderful place to visit, for its unspoiled nature, '
         'high peaks and enigmatic serenity.',
-    detailUrl:
-        'https://www.pandotrip.com/wp-content/uploads/2016/02/Asgard-Photo-by-Artur-Stanisz2.jpg',
   ),
   PlaceItem(
     name: 'The CN Tower',
@@ -149,7 +129,5 @@ final places = [
         "the Canton Tower also surpassed its height. Today, it's "
         "the world's ninth tallest free-standing structure, but "
         'the tallest on land in the Western Hemisphere.',
-    detailUrl:
-        'https://i0.wp.com/theboutiqueadventurer.com/wp-content/uploads/2020/12/cn-tower.jpg?resize=768%2C512&ssl=1',
   ),
 ];

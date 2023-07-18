@@ -24,17 +24,23 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         child: ListView.separated(
           itemCount: places.length,
-          separatorBuilder: (BuildContext context, int index) =>
-              const Divider(),
+          separatorBuilder: (BuildContext context, int index) => const Divider(
+            color: Colors.transparent,
+          ),
           itemBuilder: (context, index) {
             final item = places[index];
+            final key = Key('$index');
             return PlaceItemWidget(
+              key: key,
               item.photoUrl,
               label: item.name,
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => DetailScreen(place: item),
+                    builder: (context) => DetailScreen(
+                      place: item,
+                      key: key,
+                    ),
                   ),
                 );
               },
